@@ -1,12 +1,13 @@
 package oop_00000105577_ClementAelwynWirawan.week01
 
+fun calculateStatus(score: Int) = if (score > 75) "Lulus" else "Tidak Lulus"
+
 fun main() {
     val name = "John Thor"
     val score = 80
 
     println("Nama: $name, Nilai: $score")
 
-    // Tambahkan di bawah println
     val grade = when (score) {
         in 90..100 -> "A"
         in 80..89 -> "B"
@@ -15,4 +16,7 @@ fun main() {
     }
 
     println("Grade kamu: $grade")
+
+    // Panggil DI DALAM main()
+    println("Status: ${calculateStatus(score)}")
 }

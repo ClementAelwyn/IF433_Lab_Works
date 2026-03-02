@@ -27,4 +27,11 @@ fun main() {
         }
         println("-------------------------")
     }
+
+    println("\n=== TUGAS MANDIRI 1: MathHelper Overloading ===")
+
+    val math = MathHelper()
+    println("Luas persegi (sisi=5): ${math.hitungLuas(5)}")
+    println("Luas persegi panjang (p=8, l=4): ${math.hitungLuas(8, 4)}")
+    println("Luas lingkaran (r=7.0): ${math.hitungLuas(7.0)}")
 }

@@ -34,4 +34,15 @@ fun main() {
     println("Luas persegi (sisi=5): ${math.hitungLuas(5)}")
     println("Luas persegi panjang (p=8, l=4): ${math.hitungLuas(8, 4)}")
     println("Luas lingkaran (r=7.0): ${math.hitungLuas(7.0)}")
+
+
+    println("\n=== TUGAS MANDIRI 2: Payment Polymorphism ===")
+
+    val ewallet = EWallet(accountName = "GoPay Clement", balance = 50000.0)
+    val creditCard = CreditCard(accountName = "BCA Card Clement", limit = 100000.0)
+    val metodePembayaran: List<PaymentMethod> = listOf(ewallet, creditCard)
+
+    for (metode in metodePembayaran) {
+        metode.processPayment(75000.0)
+    }
 }

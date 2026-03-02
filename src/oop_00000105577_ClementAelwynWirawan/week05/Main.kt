@@ -44,5 +44,9 @@ fun main() {
 
     for (metode in metodePembayaran) {
         metode.processPayment(75000.0)
+        if (metode is EWallet) {
+            metode.topUp(50000.0)
+            metode.processPayment(75000.0)
+        }
     }
 }

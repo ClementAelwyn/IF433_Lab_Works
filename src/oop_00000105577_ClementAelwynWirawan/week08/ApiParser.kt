@@ -38,8 +38,9 @@ class ApiParser {
             is Clothing -> product.id
         }
 
-        // Wajib: gunakan !! karena kita yakin Java service selalu berhasil
+        // Wajib gunakan !! karena kita yakin Java service selalu berhasil
+        // mengeluarkan Transaction ID (Java Interop)
         val transactionId = JavaPaymentService.processPayment(id)!!
         println("Payment sukses! Transaction ID: $transactionId")
     }
-}
+    }

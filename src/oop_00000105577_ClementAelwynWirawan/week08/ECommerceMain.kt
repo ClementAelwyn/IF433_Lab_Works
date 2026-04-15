@@ -26,4 +26,11 @@ fun main() {
             println("LOG WARNING: Data korup diabaikan. Alasan: ${e.message}")
         }
     }
+
+    //Payment sukses! Transaction ID: TRX-E01-SUCCESS
+    //Payment sukses! Transaction ID: TRX-C01-SUCCESS
+   // Payment sukses! Transaction ID: TRX-E02-SUCCESS
+   // LOG WARNING: Data korup diabaikan. Alasan: API Invalid: Missing ID
+   // LOG: Produk di-skip karena tipe tidak dikenali.
+
 }

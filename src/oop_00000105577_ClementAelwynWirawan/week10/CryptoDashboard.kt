@@ -19,3 +19,8 @@ fun main() {
     txRepo.add(Transaction("TX002", 1200.0))
     txRepo.add(Transaction("TX003", 75.5))
 }
+
+//Status: 200 OK
+//Koin: BTC, Balance: 0.5
+//Koin: ETH, Balance: 2.0
+//Koin: USDT, Balance: 1000.0

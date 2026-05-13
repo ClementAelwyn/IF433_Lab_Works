@@ -23,5 +23,7 @@ fun main() {
         println("Caught Domain Error: Stok tidak cukup. ${e.message}")
     } catch (e: Exception) {
         println("Caught General Error: Terjadi kesalahan tidak terduga.")
+    } finally {
+        println("Siklus pengecekan dispenser pagi selesai.")
     }
 }
